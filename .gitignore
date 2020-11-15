@@ -6,3 +6,4 @@ test/*.res
 /*.out
 /*.output
 !main.cpp
+!common.h
