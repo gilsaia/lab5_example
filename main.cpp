@@ -7,7 +7,7 @@ TreeNode *root=nullptr;
 int main ()
 {
     yyparse();
-    if(root!=nullptr){
+    if(root){
         root->genNodeId();
         root->printAST();
     }
