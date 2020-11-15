@@ -5,7 +5,7 @@ main.tab.cc: main.y
 lex.yy.cc: main.l
 	flex -o lex.yy.cc main.l
 main:
-	g++ lex.yy.cc main.tab.cc tree.cpp main.cpp -o main.out
+	g++ $(shell ls *.cpp *.cc) -o main.out
 run: lex.yy.cc main.tab.cc main
 test:run
 	for file in $(basename $(shell find test/*.c)); \
