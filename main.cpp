@@ -1,6 +1,6 @@
 #include"main.tab.hh"
-#include<iostream>
 #include"common.h"
+#include<iostream>
 using std::cout;
 using std::endl;
 TreeNode *root=nullptr;
