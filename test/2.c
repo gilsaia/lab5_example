@@ -1,22 +1,25 @@
-int main(){
-    int a=1700;
-    a=2020;//a=1500;
-    /*
-    a=3000;
-    */
-    int s[20],i=20;
-    while(i-=1){
-        scanf("%d",&s[i]);
-        s[i]=s[i]+040-'a';
+/*
+I'm level 2 test. Without pointer.
+*/
+struct Matrix {
+    int id;
+    int arr[10][10];
+};
+const int len = 10;
+void main() {
+    Matrix m1, m2, m3;
+    m1->id = 1, m2->id = 2, m3->id = 3;
+    for(int i=0; i<len; i++) {
+        for(int j=0; j<len; j++) {
+            m1.arr[i][j] = i;
+            m2.arr[i][j] = j;
+            m3.arr[i][j] = m1.arr[i][j] + m2.arr[i][j];
+        }
     }
-    if((a-2020)==0){
-        printf("%d",a);
-    }else{
-        printf("%d",a%0xff);
+    for(int i=0; i<len; i++) {
+        for(int j=0; j<len; j++) {
+            printf("<%d>[%d][%d] %d\t",m3->id, i, j, m3.arr[i][j]);
+        }
+        printf("\n");
     }
-    while(a&&1){
-        printf("%d",a);
-        a/=10;
-    }
-    return 0;
 }
