@@ -49,11 +49,15 @@ struct TreeNode {
     void addChild(TreeNode *);
     void addSibling(TreeNode *);
 
-    void printNodeInfo();
-    void printAST();
-    void printNodeConnection();
-    void genNodeId();
+    void genNodeId();//从根节点开始逐个赋Id 实现方式同学们可以自行修改
 
+    void printAST();//打印语法树结点
+    /***
+     * 以下的几个函数皆为在printAST过程中辅助输出使用
+     * 同学们可以根据需要自己使用其他方法
+    ***/
+    void printNodeInfo();
+    void printNodeConnection();
     string nodeTypeInfo();
 
     int int_val;
