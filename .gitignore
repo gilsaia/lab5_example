@@ -7,3 +7,4 @@ test/*.res
 /*.output
 !main.cpp
 !common.h
+!tree.h
